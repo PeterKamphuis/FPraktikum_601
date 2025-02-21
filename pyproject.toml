@@ -35,7 +35,7 @@ Homepage = "https://github.com/PeterKamphuis/FPraktikum_601"
 
 [project.scripts]
 raw_to_clean_spectrum = "FPraktikum_601.main:main"
-
+calculate_vlsr =  "FPraktikum_601.main:get_vlsr"
 
 [tool.hatch.version]
 path = "version.py"
