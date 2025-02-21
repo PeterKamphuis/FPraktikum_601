@@ -61,6 +61,8 @@ raw_to_clean_spectrum print_examples=true
 
 
 Sometime there is a shift on the frequency calibration you can apply this shift with
-raw_to_clean_spectrum apply_shift=True shift=10
 
+raw_to_clean_spectrum "file_names=[name_file_1,name_file_2,...] apply_shift=True shift=10
+
+where the shift is in channels.
 
