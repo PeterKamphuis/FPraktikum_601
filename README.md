@@ -59,3 +59,8 @@ an example yaml file with all parameters can be printed by running
 
 raw_to_clean_spectrum print_examples=true 
 
+
+Sometime there is a shift on the frequency calibration you can apply this shift with
+raw_to_clean_spectrum apply_shift=True shift=10
+
+

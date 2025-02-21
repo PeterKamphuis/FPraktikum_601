@@ -16,6 +16,14 @@ class defaults:
     input_directory: str = os.getcwd()
     file_names: List = field(default_factory=lambda: [None])
     output_directory: str='Cleaned_Spectra'
+    apply_shift: bool = False
+    shift: int = 10  # A shift that can be applied to the spectrum
+    observatory_longitude: float =  7.262773  #longitude of the observatory in decimal degrees
+    observatory_latitude: float =  51.441808 #latitude of the observatory in decimal degrees
+    observatory_height: float = 50.    #Heigt of the observatory in meters
+    galactic_longitude: List = field(default_factory=lambda: [90.])     #galactic longitude of the observed sky location in decimal degrees
+    galactic_latitude: List = field(default_factory=lambda: [0.])    #galactic latitude of the observed sky location in decimal degrees
+    time: List = field(default_factory=lambda: ['12:00:00-01-01-2025'])      #Time of observation in UTC
  
 
 def process_input(argv):
